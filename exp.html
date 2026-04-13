@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Munyaradzi Chakwenya - Tech Portfolio showcasing frontend development, product thinking, digital design, and real-world product concepts." />
+    <title>Munyaradzi Chakwenya | Tech Portfolio</title>
+    <link rel="stylesheet" href="exp.css" />
+</head>
+
+<body>
+    <!-- Loader -->
+    <div id="loader" class="loader" aria-live="polite" aria-label="Loading portfolio">
+        <div class="loader__inner">
+            <div class="loader__brand">M.A.C</div>
+            <div class="loader__text">Initializing Portfolio...</div>
+            <div class="loader__bar">
+                <span class="loader__bar-fill"></span>
+            </div>
+            <div class="loader__dots" aria-hidden="true">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Background FX -->
+    <div class="site-fx" aria-hidden="true">
+        <div class="site-fx__blob site-fx__blob--1"></div>
+        <div class="site-fx__blob site-fx__blob--2"></div>
+        <div class="site-fx__blob site-fx__blob--3"></div>
+        <div class="site-fx__blob site-fx__blob--4"></div>
+        <canvas id="lightning-canvas" class="site-fx__lightning"></canvas>
+        <canvas id="particle-canvas" class="site-fx__particles"></canvas>
+        <div id="lightning-flash" class="site-fx__flash"></div>
+        <div id="glitch-streak" class="site-fx__glitch"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="main-header" id="top">
+        <div class="nav-shell">
+            <a href="#home" class="brand-mark" aria-label="Go to home">M.A.C</a>
+
+            <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="siteNav"
+                aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="site-nav" id="siteNav">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#services">Services</a>
+                <a href="#timeline">Timeline</a>
+                <a href="#testimonials">Testimonials</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero -->
+        <section class="hero-section" id="home">
+            <div class="hero-shell">
+                <div class="hero-copy">
+                    <div class="hero-eyebrow">TECH PORTFOLIO</div>
+
+                    <h1 class="hero-title glitch-target" data-text="Munyaradzi Chakwenya">
+                        <span class="hero-title__line">Munyaradzi</span>
+                        <span class="hero-title__line">Chakwenya</span>
+                    </h1>
+
+                    <p class="hero-description">
+                        Python and JavaScript specialist crafting reliable, beautiful digital
+                        products with strong product thinking.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn--primary">View Projects</a>
+                        <a href="#contact" class="btn btn--ghost">Hire Me</a>
+                        <a href="#" class="btn btn--text">Download My CV</a>
+                    </div>
+
+                    <div class="hero-metrics">
+                        <div class="metric-card">
+                            <span class="metric-card__value">Frontend</span>
+                            <span class="metric-card__label">HTML, CSS, JavaScript</span>
+                        </div>
+                        <div class="metric-card">
+                            <span class="metric-card__value">Python</span>
+                            <span class="metric-card__label">Logic & problem solving</span>
+                        </div>
+                        <div class="metric-card">
+                            <span class="metric-card__value">Product</span>
+                            <span class="metric-card__label">UX and design thinking</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="hero-visual__hud" aria-hidden="true">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <div class="scene">
+                        <div class="cube" id="cube">
+                            <div class="face front">
+                                <div class="tag">Developer</div>
+                                <h2>M.A.Chakwenya</h2>
+                                <p>Building digital solutions that matter.</p>
+                            </div>
+
+                            <div class="face right">
+                                <h2>SureFix</h2>
+                                <p>A high-trust tech support solution built around clarity and confidence.</p>
+                            </div>
+
+                            <div class="face back">
+                                <h2>Prime Choice</h2>
+                                <p>A modern butcher marketplace connecting local businesses with customers.</p>
+                            </div>
+
+                            <div class="face left">
+                                <h2>The Mission</h2>
+                                <p>Turning real user pain points into practical and elegant digital products.</p>
+                            </div>
+
+                            <div class="face top">
+                                <h2>Core Stack</h2>
+                                <p>Python, HTML, CSS, JavaScript, UI thinking, product design.</p>
+                            </div>
+
+                            <div class="face bottom">
+                                <h2>Let’s Build</h2>
+                                <p>Focused on interfaces, trust, and useful digital experiences.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="hint">DRAG TO ROTATE</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section class="content-section" id="about">
+            <div class="section-shell">
+                <div class="section-heading">
+                    <span class="section-heading__eyebrow">ABOUT</span>
+                    <h2>Who I am as a builder and as a person</h2>
+                    <p>
+                        A developer and product-minded creative focused on useful digital experiences,
+                        thoughtful interfaces, and solutions that solve real-world problems.
+                    </p>
+                </div>
+
+                <div class="about-dual-grid">
+                    <article class="glass-card about-panel">
+                        <h3>Professional</h3>
+                        <ul class="about-list">
+                            <li>12-month tech bootcamp at Uncommon.org</li>
+                            <li>Python and JavaScript specialist</li>
+                            <li>Product Designer for the Petma Design System</li>
+                        </ul>
+                    </article>
+
+                    <article class="glass-card about-panel">
+                        <h3>Personal</h3>
+                        <ul class="about-list">
+                            <li>Bulawayo-based builder and collaborator</li>
+                            <li>Fitness and weightlifting enthusiast</li>
+                            <li>Amapiano and Afro-beat music producer</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section class="content-section" id="skills">
+            <div class="section-shell">
+                <div class="section-heading">
+                    <span class="section-heading__eyebrow">SKILLS</span>
+                    <h2>A balanced mix of development, design, and product thinking</h2>
+                </div>
+
+                <div class="skills-grid">
+                    <article class="glass-card skill-group">
+                        <h3>Frontend</h3>
+                        <div class="pill-list">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>Responsive Design</span>
+                        </div>
+                    </article>
+
+                    <article class="glass-card skill-group">
+                        <h3>Programming</h3>
+                        <div class="pill-list">
+                            <span>Python</span>
+                            <span>Logic Building</span>
+                            <span>Problem Solving</span>
+                        </div>
+                    </article>
+
+                    <article class="glass-card skill-group">
+                        <h3>Product & UX</h3>
+                        <div class="pill-list">
+                            <span>UI Thinking</span>
+                            <span>UX Research</span>
+                            <span>Wireframing</span>
+                            <span>Product Design</span>
+                        </div>
+                    </article>
+
+                    <article class="glass-card skill-group">
+                        <h3>Tools</h3>
+                        <div class="pill-list">
+                            <span>Figma</span>
+                            <span>VS Code</span>
+                            <span>GitHub</span>
+                            <span>AI Workflows</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section class="content-section" id="projects">
+            <div class="section-shell">
+                <div class="section-heading">
+                    <span class="section-heading__eyebrow">PROJECTS</span>
+                    <h2>Selected digital products and interface builds</h2>
+                    <p>
+                        A collection of product concepts, UI explorations, and working builds focused on
+                        usability, trust, and strong visual structure.
+                    </p>
+                </div>
+
+                <div class="projects-grid">
+                    <article class="glass-card project-card">
+                        <div class="project-card__media project-card__media--contain">
+                            <img src="path.png" alt="SupportAI project image" />
+                        </div>
+
+                        <div class="project-card__body">
+                            <h3>SupportAI</h3>
+                            <span class="project-status project-status--blue">In Progress</span>
+
+                            <p>
+                                AI-assisted support workflows for issue triage and productivity.
+                            </p>
+
+                            <div class="pill-list">
+                                <span>Python</span>
+                                <span>Flask</span>
+                                <span>OpenAI</span>
+                            </div>
+
+                            <div class="project-links">
+                                <a class="project-link-btn project-link-btn--figma is-disabled"
+                                    href="javascript:void(0)" aria-disabled="true">Read More</a>
+                                <a class="project-link-btn project-link-btn--github is-disabled"
+                                    href="javascript:void(0)" aria-disabled="true">GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="glass-card project-card">
+                        <div class="project-card__media project-card__media--contain">
+                            <img src="weather dashboard.png" alt="Weather Dashboard project image" />
+                        </div>
+
+                        <div class="project-card__body">
+                            <h3>Weather Dashboard</h3>
+                            <span class="project-status project-status--green">Live</span>
+
+                            <p>
+                                Real-time weather data visualized in an intuitive, responsive interface.
+                            </p>
+
+                            <div class="pill-list">
+                                <span>JavaScript</span>
+                                <span>API</span>
+                                <span>CSS Grid</span>
+                            </div>
+
+                            <div class="project-links">
+                                <a class="project-link-btn project-link-btn--figma is-disabled"
+                                    href="javascript:void(0)" aria-disabled="true">Read More</a>
+                                <a class="project-link-btn project-link-btn--github"
+                                    href="https://github.com/munyaradzichakwenya60-coder/Weather-forecast.git"
+                                    target="_blank" rel="noopener noreferrer">GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="glass-card project-card">
+                        <div class="project-card__media project-card__media--contain">
+                            <img src="path.png" alt="SureFix project image" />
+                        </div>
+
+                        <div class="project-card__body">
+                            <h3>SureFix</h3>
+                            <span class="project-status project-status--orange">Prototype</span>
+
+                            <p>
+                                End-user troubleshooting app that streamlines the technical support flow.
+                            </p>
+
+                            <div class="pill-list">
+                                <span>JavaScript</span>
+                                <span>UX</span>
+                                <span>Web App</span>
+                            </div>
+
+                            <div class="project-links">
+                                <a class="project-link-btn project-link-btn--figma"
+                                    href="https://www.figma.com/make/QZZkAThlvmsw02ubeHT1UR/Taska-Mobile-App-MVP-Design?t=QjUmmKJCJjchrzum-1"
+                                    target="_blank" rel="noopener noreferrer">Read More</a>
+                                <a class="project-link-btn project-link-btn--github is-disabled"
+                                    href="javascript:void(0)" aria-disabled="true">GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="glass-card project-card">
+                        <div class="project-card__media project-card__media--contain">
+                            <img src="Butcher-dashboard.png" alt="Prime Cuts project image" />
+                        </div>
+
+                        <div class="project-card__body">
+                            <h3>Prime Cuts</h3>
+                            <span class="project-status project-status--blue">In Progress</span>
+
+                            <p>
+                                A butcher marketplace concept connecting local meat sellers and customers.
+                            </p>
+
+                            <div class="pill-list">
+                                <span>Marketplace</span>
+                                <span>UI/UX</span>
+                                <span>Product Design</span>
+                            </div>
+
+                            <div class="project-links">
+                                <a class="project-link-btn project-link-btn--figma"
+                                    href="https://www.figma.com/make/Ij1pLdG4TxdXl0RaEdxgJq/Complete-previous-steps?t=YFnljiHHh40oybKB-1"
+                                    target="_blank" rel="noopener noreferrer">Read More</a>
+                                <a class="project-link-btn project-link-btn--github is-disabled"
+                                    href="javascript:void(0)" aria-disabled="true">GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="glass-card project-card">
+                        <div class="project-card__media project-card__media--contain">
+                            <img src="my app.png" alt="Sweet Treats project image" />
+                        </div>
+
+                        <div class="project-card__body">
+                            <h3>Sweet Treats</h3>
+                            <span class="project-status project-status--blue">In Progress</span>
+
+                            <p>
+                                A bakery website concept focused on product presentation and a warm shopping experience.
+                            </p>
+
+                            <div class="pill-list">
+                                <span>Bakery UI</span>
+                                <span>Branding</span>
+                                <span>Frontend</span>
+                            </div>
+
+                            <div class="project-links">
+                                <a class="project-link-btn project-link-btn--figma"
+                                    href="https://www.figma.com/design/f1R9TyICTYoNZie9ryow2v/Bakery-Website-Ui--Community-?node-id=0-1&t=T2wVMsUyw9VHK4jm-1"
+                                    target="_blank" rel="noopener noreferrer">Read More</a>
+                                <a class="project-link-btn project-link-btn--github"
+                                    href="https://github.com/munyaradzichakwenya60-coder/Bakery-website.git"
+                                    target="_blank" rel="noopener noreferrer">GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="glass-card project-card">
+                        <div class="project-card__media project-card__media--contain">
+                            <img src="login.png" alt="Order.uk project image" />
+                        </div>
+
+                        <div class="project-card__body">
+                            <h3>Order.uk</h3>
+                            <span class="project-status project-status--blue">In Progress</span>
+
+                            <p>
+                                A food delivery interface built around clean browsing and a smoother customer flow.
+                            </p>
+
+                            <div class="pill-list">
+                                <span>Food UI</span>
+                                <span>Frontend</span>
+                                <span>Figma</span>
+                            </div>
+
+                            <div class="project-links">
+                                <a class="project-link-btn project-link-btn--figma"
+                                    href="https://www.figma.com/design/Cfsc2DGI7SDH9gSqm7gDb6/Food-Delivery-Website---App-Design-UI-Kit--Community-?node-id=0-1&t=kE5WyJjJj151lQIL-1"
+                                    target="_blank" rel="noopener noreferrer">Read More</a>
+                                <a class="project-link-btn project-link-btn--github"
+                                    href="https://github.com/munyaradzichakwenya60-coder/Restaurant-project.git"
+                                    target="_blank" rel="noopener noreferrer">GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <!-- Services -->
+        <section class="content-section" id="services">
+            <div class="section-shell">
+                <div class="section-heading">
+                    <span class="section-heading__eyebrow">SERVICES</span>
+                    <h2>How I can contribute to digital products</h2>
+                </div>
+
+                <div class="services-grid">
+                    <article class="glass-card service-card">
+                        <h3>Frontend Development</h3>
+                        <p>Building responsive interfaces with clean structure and modern presentation.</p>
+                    </article>
+
+                    <article class="glass-card service-card">
+                        <h3>UI/UX Design Support</h3>
+                        <p>Helping shape interfaces that are usable, trustworthy, and visually refined.</p>
+                    </article>
+
+                    <article class="glass-card service-card">
+                        <h3>Product Design Thinking</h3>
+                        <p>Turning real-world problems into focused digital product concepts and flows.</p>
+                    </article>
+
+                    <article class="glass-card service-card">
+                        <h3>Portfolio & Landing Pages</h3>
+                        <p>Designing polished digital pages that communicate value clearly and confidently.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Timeline -->
+        <section class="content-section" id="timeline">
+            <div class="section-shell">
+                <div class="section-heading">
+                    <span class="section-heading__eyebrow">TIMELINE</span>
+                    <h2>A growing journey in tech, design, and problem solving</h2>
+                </div>
+
+                <div class="timeline">
+                    <article class="timeline-item glass-card">
+                        <span class="timeline-item__marker"></span>
+                        <h3>Foundation</h3>
+                        <p>Built confidence in coding fundamentals, digital structure, and interface thinking.</p>
+                    </article>
+
+                    <article class="timeline-item glass-card">
+                        <span class="timeline-item__marker"></span>
+                        <h3>Exploration</h3>
+                        <p>Expanded into design thinking, UX, product concepts, and practical digital workflows.</p>
+                    </article>
+
+                    <article class="timeline-item glass-card">
+                        <span class="timeline-item__marker"></span>
+                        <h3>Concept Building</h3>
+                        <p>Developed ideas like SureFix and Prime Choice around trust, service, and local usability.</p>
+                    </article>
+
+                    <article class="timeline-item glass-card">
+                        <span class="timeline-item__marker"></span>
+                        <h3>Portfolio Growth</h3>
+                        <p>Refining presentation quality, interaction design, and stronger public-facing project work.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="content-section" id="testimonials">
+            <div class="section-shell">
+                <div class="section-heading">
+                    <span class="section-heading__eyebrow">TESTIMONIALS</span>
+                    <h2>How my work approach comes across</h2>
+                </div>
+
+                <div class="testimonials-grid">
+                    <article class="glass-card testimonial-card">
+                        <p>
+                            “Munyaradzi thinks carefully about both the user and the product. His
+                            ideas show structure, intention, and a real desire to solve practical problems.”
+                        </p>
+                        <h3>Design Feedback</h3>
+                    </article>
+
+                    <article class="glass-card testimonial-card">
+                        <p>
+                            “There is clear growth in both creativity and technical thinking. His
+                            work shows promising direction in frontend and digital design.”
+                        </p>
+                        <h3>Learning Mentor</h3>
+                    </article>
+
+                    <article class="glass-card testimonial-card">
+                        <p>
+                            “What stands out is the effort to build solutions that feel useful, not
+                            just attractive. That mindset is valuable.”
+                        </p>
+                        <h3>Project Review</h3>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="content-section content-section--contact" id="contact">
+            <div class="section-shell">
+                <div class="section-heading">
+                    <span class="section-heading__eyebrow">CONTACT</span>
+                    <h2>Let’s build something valuable together</h2>
+                    <p>
+                        I’m open to collaboration, project conversations, and opportunities to keep
+                        growing as a builder and digital problem solver.
+                    </p>
+                </div>
+
+                <div class="contact-grid">
+                    <article class="glass-card contact-card">
+                        <h3>Email</h3>
+                        <a href="mailto:munyaradzichakwenya60@gmail.com">munyaradzichakwenya60@gmail.com</a>
+                    </article>
+
+                    <article class="glass-card contact-card">
+                        <h3>Phone</h3>
+                        <a href="tel:+263772089071">+263 772 089 071</a>
+                    </article>
+
+                    <article class="glass-card contact-card">
+                        <h3>Location</h3>
+                        <p>Rangemore, Bulawayo, Zimbabwe</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-shell">
+            <div>
+                <h3>Munyaradzi Chakwenya</h3>
+                <p>Building useful digital products with clarity, trust, and intention.</p>
+            </div>
+
+            <nav class="footer-nav">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+        <p class="footer-copy">&copy; 2026 Munyaradzi Chakwenya. All rights reserved.</p>
+    </footer>
+
+    <script src="exp.Js"></script>
+</body>
+
+</html>
